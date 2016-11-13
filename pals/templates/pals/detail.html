@@ -1,0 +1,56 @@
+{% extends "pals/index.html" %}
+{% block title %} {{userProfile.username}}'s details {% endblock %}
+
+{% block body %}
+<div class="row">
+	<div class="col-sm-2 col-lg-2">
+	<ul class="list-group">
+	  <li class="list-group-item">
+	      <a href="https://interpals.net/{{userProfile.username}}"><img src="{{userProfile.imageUrl}}" alt="Sorry buddy"></a>
+	  </li>
+	  
+	  <li class="list-group-item">
+	  	<a href="{% url 'pals:index' page %}">Back</a>
+	  </li>
+
+	</ul>
+	</div>
+	<div class="col-sm-10 col-lg-10">
+	  <table class="table table-striped">
+	    <thead>
+	      <tr>
+	        <th>Name</th>
+	        <th>Value</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+	      	<td> <b> Username </b></td>
+	        <td>{{userProfile.username}}</td>
+	      </tr>
+	      <tr>
+	      	<td> <b>City</b> </td>
+	        <td>{{userProfile.city}}</td>
+	      </tr>
+	      <tr>
+	      	<td> <b>State</b> </td>
+	        <td>{{userProfile.state}}</td>
+	      </tr>
+	      <tr>
+	      	<td> <b>Country</b> </td>
+	        <td>{{userProfile.country}}</td>
+	      </tr>
+	      <tr>
+	      	<td> <b>Age</b> </td>
+	        <td>{{userProfile.age}}</td>
+	      </tr>
+	      <tr>
+	      	<td> <b>Description</b> </td>
+	        <td>{{userProfile.description}}</td>
+	      </tr>
+	    </tbody>
+	  </table>
+	</div>
+</div>
+
+{% endblock %}

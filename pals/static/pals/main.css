@@ -1,0 +1,19 @@
+th, .navbar-header{
+	font-family: 'Satisfy';
+}
+body{
+	background-color: #fafafa;
+}
+.navbar{
+	border-radius: 0px;
+}
+h6{
+	font-size:6pt;
+}
+.form-control, .submit{
+	margin-top:7px;
+}
+.submit{
+	width:100%;
+	margin-left:-25px;
+}
