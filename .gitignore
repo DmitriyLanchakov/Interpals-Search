@@ -1,1 +1,3 @@
-myPals/settings.py
+.idea
+*.pyc
+
