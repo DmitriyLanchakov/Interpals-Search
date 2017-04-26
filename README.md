@@ -10,7 +10,6 @@ python manage.py runserver
 
 
 ## Screenshots
-Find people who have word **designer** in their description.
-
+Find people who have word **designer** in their description:
 
 <img src="images/screenshot.png"/>
